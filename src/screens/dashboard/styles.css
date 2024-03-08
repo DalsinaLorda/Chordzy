@@ -1,0 +1,81 @@
+.container{
+    position: relative;
+    height: 100vh;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+}
+.Box{
+    
+    background: whitesmoke;
+    height: 50px;
+    border-bottom: 1.5px solid rgb(187, 184, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.box, p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+.BigBox{
+    position: absolute;
+    background: rgb(240, 232, 232);
+    height: 92vh;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.BoxContent{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 95%;
+    height: 30vh;
+    margin-left: 30px;
+    
+}
+.bigBoxx{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 95%;
+    height: 30vh;
+    margin-left: 30px;
+    
+}
+#subBox{
+    position: relative;
+    background-color: rgb(90, 245, 211);
+    width: 24%;
+    height: 90%;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+}
+
+#moreInfo{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 0px;
+    background: rgb(43, 226, 186);
+    height: 25%;
+    width: 100%;
+    border-radius: 0 0 5px 5px ;
+    display: flex;
+    justify-content: center;
+}
+#moreInfo ,h4{
+    color: rgb(245, 239, 239);
+    margin-top: 10px;
+}
+#link{
+    color: rgb(245, 239, 239);
+    margin-top: 10px;
+}

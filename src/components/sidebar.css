@@ -1,0 +1,55 @@
+.logo{
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:rgb(52, 53, 53);
+    
+
+  }
+
+  .textss{
+      color: white;
+  }
+.imageContain{
+    background: transparent;
+    align-content: center;
+
+}
+#textContain{
+  
+    font-style:italic;
+    color: black;
+    font-family: bold;
+    display: flex;
+    justify-content: center;
+    
+}
+#textContain h3{
+    margin-right: 80px;
+    font-size: 15px;
+}
+.img {
+    width: auto;
+    height: fit-content;
+    justify-content: center;
+    flex-basis: 40%;
+    border: 1px solid rgb(44, 226, 226);
+  }
+
+  
+.text {
+    font-size: 15px;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    right:80px;
+    top: 60px;
+    float:right;
+    font-style:italic;
+    color: black;
+    font-family: bold;
+    margin-bottom: 10px
+
+}

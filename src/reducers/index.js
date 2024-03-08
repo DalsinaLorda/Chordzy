@@ -1,10 +1,29 @@
-import media from '../media.json'
+import media from '../media.json';
+export const client={client:'http://192.168.43.236:3000'};
+const DEFAULT_PLAYLIST = 'home';
 
-const DEFAULT_PLAYLIST = 'home'
+
 const DEFAULT_VOLUME = 0.65
+const payload = 
+      {
+        sentAt: '0',
+        plan: new Set(),
+        senderId: '',
+        senderName: '',
+        receverId: '',
+        receverName: '',
+        sent: '',
+        received: new Set(),
+        from: new Set(),
+        to: new Set(),
+  
+      };
+    
 
 export const initialState = {
   media,
+  user: {},
+  payload: payload,
   addToPlaylistId: '',
   currentPlaylist: DEFAULT_PLAYLIST,
   currentSongId: '',
@@ -26,8 +45,75 @@ export const reducer = (state, action) => {
         ...state,
         playlists: { ...state.playlists, [action.playlist]: new Set() }
       }
-    case 'ADD_TO_PLAYLIST':
-      return { ...state, addToPlaylistId: action.songId }
+    case 'ADD_USER':
+      return { ...state, user: action.user }
+
+    case 'Pay_Load':
+      return { ...state, payload: action.payload }
+
+    case 'ADD_FROM':
+      state.payload.from= new Set();
+      state.payload.from=action.payload;
+      return { ...state }
+    case 'ADD_TO':
+      //console.warn(action.payload)
+      state.payload.to= new Set();
+      state.payload.to=action.payload;
+      return { ...state }
+
+    case 'ADD_PLAN':
+      state.payload.plan= new Set();
+      state.payload.plan=action.payload;
+      return { ...state }
+    case 'ADD_SENTAT':
+      state.payload.sentAt= new Set();
+      state.payload.sentAt=action.payload;
+      return { ...state }
+
+    case 'ADD_SENT':
+      state.payload.sent= new Set();
+      state.payload.sent=action.payload;
+      return { ...state }
+      
+    case 'ADD_SENDER_TELL':
+      state.payload.senderId= new Set();
+      state.payload.senderId=action.payload;
+      return { ...state }
+
+    case 'ADD_SENDER_N':
+      state.payload.senderName= new Set();
+      state.payload.senderName=action.payload;
+      return { ...state }
+
+    case 'ADD_REC_Name':
+      state.payload.receverName= '';
+      state.payload.receverName=action.payload;
+      return { ...state }
+
+    case 'ADD_REC_TELL':
+      state.payload.receverId= new Set();
+      state.payload.receverId=action.payload;
+      return { ...state }
+      
+    case 'LOG_OUT':
+      localStorage.clear();
+      state.user=null;
+      return { ...state }
+    
+    case 'CLEAR_BASKET':
+      state.payload={
+        sentAt: '',
+        plan: '',
+        senderId: '',
+        receverId: '',
+        sent: '',
+        received: '',
+        from: '',
+        to: '',
+  
+      }
+      return { ...state }
+
     case 'ABORT_ADD_TO_PLAYLIST':
       return { ...state, addToPlaylistId: '' }
     case 'ADD_FAVORITE':

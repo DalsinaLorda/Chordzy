@@ -85,4 +85,4 @@ Our action will look like this:
 
 ## Next Up
 
-Adding songs to custom playlists.
+Adding customers

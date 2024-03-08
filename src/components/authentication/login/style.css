@@ -1,0 +1,20 @@
+* {
+  margin: 110;
+  box-sizing: border-box;
+  font-family: "CustomFont";
+}
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./user_icon.png');
+}
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#lorda{
+  color: red;
+}

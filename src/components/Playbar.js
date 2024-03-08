@@ -18,6 +18,7 @@ const Playbar = () => {
   const song = state.media[state.currentSongId]
 
   if (!song) {
+    console.warn('none')
     return <div className="Playbar" css={CSS} />
   }
 

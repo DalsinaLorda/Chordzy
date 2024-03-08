@@ -1,0 +1,9 @@
+#submit{
+    color: #ffffff;
+    background-color: turquoise;
+    font-family: Inter-Medium
+}
+#submit:hover{
+    color: turquoise;
+    background-color: #ffffff;
+}

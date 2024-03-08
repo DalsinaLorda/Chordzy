@@ -1,0 +1,171 @@
+#Content{
+  position: relative;
+  width: calc(100% - 200px);
+  height: 100%;
+  background: white;
+}
+table {
+  border-collapse: collapse;
+  width: 98%;
+  margin-top: 15px;
+  font-size: 15px 
+}
+
+table, th, td {
+  text-align: left;
+  border: none; 
+  border-collapse: collapse;
+}
+#thead  {
+  background-color: white;
+  color: rgb(33, 144, 218);
+  opacity: 1;
+  font-weight: bold;
+  margin-left: 0px;
+  padding: 0;
+  border-bottom: 1px solid gray;
+
+}
+
+#Box{
+  background: whitesmoke;
+  width: 100%;
+  height: 50px;
+  margin-top: -5px;
+  margin-bottom: -20px;
+  border-bottom: 1.5px solid rgb(187, 184, 184);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+#box, p{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 1px;
+  font-weight: bold;
+  
+}
+
+#bttomthead{
+  background-color: #102124;
+  color: white;
+  opacity: 0.4;
+  margin: 10px;
+  padding: 0;
+}
+#tree:hover td { background:  rgba(100, 21, 21, 0.103) !important;}
+
+#tree{
+  height: 30px;
+}
+#tree td{
+color: gray;
+}
+#tree:nth-child(even) {
+  background-color: #eee;
+}
+#tree:nth-child(odd) {
+ background-color:#fff;
+}
+#searchBox{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  height: 2m;
+  
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#Search{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: white;
+  top: 0px;
+  padding: 20;
+}
+#nwinput {
+  background: white;
+  border-radius: 5px;
+  width: 350px;
+  height: 35px;
+  margin-top: 21px;
+  border: 1px solid grey;
+  margin-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family:Arial;
+}
+#delete{
+  background: rgba(201, 5, 5, 0.753);
+  height: 30px;
+  width: 40px;
+  padding: 4px;
+  border-radius: 5px;
+
+}
+#delete:hover { background:  red}
+#edit{
+  color: white;
+  background: turquoise;
+  height: 30px;
+  width: 40px;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 5%;
+
+}
+#edit:hover { background:  rgb(5, 131, 118)}
+.btn-btnw{
+  background: turquoise;
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 85px;
+  margin-top: 3px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 1px;
+}
+.btn-btnw:hover { background:  rgb(123, 240, 226) !important;
+color: white;
+border: 1px solid turquoise;
+
+}
+#selectSearch{
+  height: 35px;
+  top: 0px;
+  padding: 20;
+  
+}
+.select-btnw{
+  background: rgb(70, 247, 229);
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 35px;
+  margin-top: 8px;
+  margin-right: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 1px;
+}
+.select-btnw option{
+  background: rgb(255, 255, 255);
+  color: rgb(49, 44, 44);
+}
+
+
+#total{
+ 
+  color: rgb(182, 29, 29);
+  right: 100px;
+  width: 100%;
+  font-size: 10px;
+  background: rgb(151, 226, 75);
+}
+

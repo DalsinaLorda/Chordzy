@@ -1,0 +1,19 @@
+#former li{
+  border: 0.2rem solid #e4e7eb;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+#former li:hover  {
+  background-color: rgba(222, 241, 240, 0.993);
+  border-color: turquoise;
+  cursor: auto;
+  color: #fcfcfc;
+}
+#inputHolder{
+  justify-content: center;
+}

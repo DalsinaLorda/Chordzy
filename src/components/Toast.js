@@ -3,17 +3,18 @@
 import React, { useEffect } from 'react'
 import { css, jsx } from '@emotion/core'
 
-const Toast = ({ toast, close }) => {
+const Toast = ({ toast, close, end}) => {
   useEffect(() => {
     if (!toast) return
 
     const closeToast = () => {
       setTimeout(() => {
-        close()
+       close()
       }, 2500)
     }
 
-    closeToast()
+    closeToast();
+    
 
     return () => clearTimeout(closeToast)
   }, [toast])
@@ -31,11 +32,12 @@ const CSS = css`
   -webkit-animation: toast 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: toast 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: calc(50% - 175px);
-  background: white;
+  background: rgba(245, 237, 237, 0.86);
   color: black;
   width: 350px;
+  border-radius: 10px;
   padding: 25px;
   text-align: center;
 

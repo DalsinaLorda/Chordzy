@@ -1,14 +1,17 @@
 import React from 'react'
+import { BrowserRouter, MemoryRouter } from 'react-router-dom'
 import { Global, css, jsx } from '@emotion/core'
-import MusicPlayer from './index'
+import Main from './index'
 
 /**
  * @function App
  */
 const App = () => (
   <>
+  <MemoryRouter>
     <Global styles={GlobalCSS} />
-    <MusicPlayer />
+    <Main />
+  </MemoryRouter>
   </>
 )
 

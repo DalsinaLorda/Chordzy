@@ -1,0 +1,140 @@
+.container{
+    position: relative;
+    height: 100vh;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+}
+.Box{
+    
+    background: whitesmoke;
+    height: 50px;
+    border-bottom: 1.5px solid rgb(187, 184, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.box, p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+#BranchBox{
+  background: transparent;
+}
+#BranchBox p{
+  margin-left: 1px;
+}
+.Btn-btn{
+  background: turquoise;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  border: 1px solid lightblue;
+  font-size: small;
+  padding: 1px;
+  color: white;
+}
+.Btn-btn:hover{
+  background: teal;
+  color: wheat;
+  border: 1px solid turquoise;
+}
+.bigDiv{
+    margin-top: 10px;
+}
+
+table {
+    width:100%;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15;
+    font-size: 20 
+  }
+  
+  table, th, td {
+    text-align: center;
+    border: none; 
+    border-collapse: collapse;
+  }
+  #tablehead  {
+    background-color: #00090a;
+    color: white;
+    opacity: 0.4;
+    margin: 0;
+    padding: 0;
+  
+  }
+  #tree:hover td { background:  rgba(100, 21, 21, 0.103) !important;}
+  
+  #tree{
+    height: 30px;
+  }
+  #tree td{
+  color: gray;
+  }
+  #tree:nth-child(even) {
+    background-color: #eee;
+  }
+  #tree:nth-child(odd) {
+   background-color:#fff;
+  }
+  .searchBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2m;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+  }
+  #bttomthead{
+    background-color: #102124;
+    color: white;
+    opacity: 0.4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #delete{
+    background: rgba(201, 5, 5, 0.753);
+    height: 30px;
+    width: 40px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 5%;
+  
+  }
+  #delete:hover { background:  red}
+  #edit{
+    color: white;
+    background: turquoise;
+    height: 30px;
+    width: 40px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 5%;
+  
+  }
+  #edit:hover { background:  rgb(5, 131, 118)}
+  .button{
+    background: turquoise;
+    width: 60px;
+    height: 39px;
+    border-radius: 50px;
+    margin-right: 90px;
+    margin-top: 5px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  .button:hover { background:  rgb(123, 240, 226) !important;
+  color: white;
+  border: 1px solid turquoise;
+  
+  }
+  
+  

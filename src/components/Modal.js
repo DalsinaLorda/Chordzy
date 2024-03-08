@@ -29,9 +29,10 @@ const CSS = css`
   .modal-content {
     position: relative;
     width: 400px;
-    background-image:linear-gradient(#000e34,#2C041C);
+    background: rgba(0, 0, 0, 0.86);
     border-radius: 4px;
     padding: 25px;
+    z-index: 999
   }
 
   i {
